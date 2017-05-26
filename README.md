@@ -1,7 +1,4 @@
 # Proxmox
-Proxmox VE 4.x Cluster 
-
-PROXMOX
 
 Proxmox Virtual Environment, es un proyecto de código abierto, desarrollado y mantenido por Proxmox Server Solutions GmbH y el apoyo financiero de Internet Foundation Austria (IPA). Una completa plataforma de virtualización basada en sistemas de código abierto que permite la virtualización tanto sobre OpenVZ como KVM.
 Es una distribución bare-metal, basada en Debian con solo los servicios básicos para de esta forma obtener un mejor rendimiento.
