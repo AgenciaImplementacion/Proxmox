@@ -43,7 +43,7 @@ $ pvecm status
 
 Asignación de nodo al cluster vamos a server2
 ```bash
-$pvecm add server1
+$ pvecm add server1
 ```
 La respuesta successfuly added node ‘server2’ tu cluster
 
