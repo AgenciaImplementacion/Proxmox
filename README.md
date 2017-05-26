@@ -1,57 +1,14 @@
 # Proxmox
 Proxmox VE 4.x Cluster 
 
-## Servidores
+PROXMOX
 
-1 – xxx.xxx.xxx.11 (server1)
-2 – xxx.xxx.xxx.12 (server2)
+Proxmox Virtual Environment, es un proyecto de código abierto, desarrollado y mantenido por Proxmox Server Solutions GmbH y el apoyo financiero de Internet Foundation Austria (IPA). Una completa plataforma de virtualización basada en sistemas de código abierto que permite la virtualización tanto sobre OpenVZ como KVM.
+Es una distribución bare-metal, basada en Debian con solo los servicios básicos para de esta forma obtener un mejor rendimiento.
 
-Modificamos el archivos hosts ambas maquinas
-```bash
-$ nano /etc/hosts
-```
-<b>Servidor server1</b> 
-```
-xxx.xxx.xxx.11 server1.local virtual pvelocalhost
-xxx.xxx.xxx.12 server2.local nodo2
-```
-<b>Servidor server2</b> 
-```
-xxx.xxx.xxx.12 server2.local virtual pvelocalhost
-xxx.xxx.xxx.11 server1.local nodo1
-```
-Guardamos archivo.
+Proxmox, no es solo una maquina virtual más, con una interfaz gráfica muy sencilla esta herramienta permite la migración en vivo de maquinas virtuales, clustering de servidores, backups automáticos y conexión a un NAS/SAN con NFS, iSCSI, etc…
 
-Comprabar quedo la configuración
+Al utilizar OpenVZ se puede cambiar tanto memoria RAM como espacio en disco asignados, en tiempo real y sin reiniciar el sistema. Otra cosa muy interesante son las plantillas, que consisten en un sistema operativo con algún software preinstalado, que se descargan directamente desde la interfaz de administración y crear una máquina virtual a partir de ellas.
 
-```bash
-$ ping nodo2
-$ ping nodo1
-```
-<b>Creacción de cluster</b>
-
-Asignamos el Cluster server1
-```bash
-$ pvecm create <--Nombre_Cluster-->
-```
-
-Verificamos el Status cluster
-```bash
-$ pvecm status
-```
-<b>Agregar Nodo</b>
-
-Asignación de nodo al cluster vamos a server2
-```bash
-$ pvecm add server1
-```
-La respuesta successfuly added node ‘server2’ tu cluster
-
-Verificamos el status 
-```bash
-$ pvecm status
-```
-
-
-
+<img src=proxmox.jpg />
 
