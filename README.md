@@ -11,5 +11,6 @@ Al utilizar OpenVZ se puede cambiar tanto memoria RAM como espacio en disco asig
 
 ## Lista de entradas para a configuración de Proxmox
 - Configuración de [Cluster](Cluster.md)
+- Eliminación configuración [Cluster](Eliminar_cluster.md)
 
 
