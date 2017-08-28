@@ -87,9 +87,9 @@ vim  /etc/exports
 Pegue la configuración a continuación:
 
 ```
-/Var/nfsbackup 192.168.1.114 (rw, sync, no_root_squash) 
-/var/nfsbackup 192.168.1.115 (rw, sync, no_root_squash) 
-/var/nfsbackup 192.168.1.116 (rw, sync, no_root_squash)
+/Var/nfsbackup 192.168.1.114(rw,sync,no_root_squash) 
+/var/nfsbackup 192.168.1.115(rw,sync,no_root_squash) 
+/var/nfsbackup 192.168.1.116(rw,sync,no_root_squash)
 ```
 
 Guarde el archivo y salga del editor.
