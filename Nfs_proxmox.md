@@ -96,7 +96,7 @@ Guarde el archivo y salga del editor.
 Para activar la nueva configuración, vuelva a exportar el directorio NFS y asegúrese de que el directorio compartido está activo:
 
 ```bash
-Exportfs -r 
+exportfs -r 
 exportfs -v
 ```
 
