@@ -51,3 +51,12 @@ Verificamos el status
 ```bash
 $ pvecm status
 ```
+
+# ERRORES FRECUENTES
+
+Si arroja el error `Error: cluster not ready - no quorum? (500)` puede verse la solución en https://forum.proxmox.com/threads/create-vm-error-cluster-not-ready-no-quorum.9776/
+Básicamente hay que reducir el número de nodos para entrar en quorum y poder iniciar las máquinas.
+
+```bash
+pvecm e 1
+```
